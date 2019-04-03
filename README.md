@@ -2,6 +2,8 @@
 
 Kanji.gif is a collection of animated gif images of the japanese kanjis and kanas characters.
 
+The Kanji.git project is hosted at https://github.com/jcsirot/kanji.gif/
+
 ## License
 
 The images are released under the term of the Creative Commons Attribution-ShareAlike 3.0
@@ -13,7 +15,7 @@ It means you are free to:
 
 for any purpose, even commercially.
 
-If you ever use these images or this project sending me an email to `kanjis at chelonix.org` will be greatly appreciated.
+If you ever use these images or this project sending me an email to `kanji at chelonix.org` will be greatly appreciated.
 
 The rest of the project (Dockerfile, scripts...) is released under the term of the GNU GENERAL PUBLIC LICENSE v3.
 

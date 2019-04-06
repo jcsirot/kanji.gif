@@ -1,5 +1,7 @@
 # Kanji.gif
 
+[![License: CC BY-SA 3.0](https://img.shields.io/badge/License-CC%20BY--SA%203.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/3.0/)
+
 Kanji.gif is a collection of animated gif images of the japanese kanjis and kanas characters.
 
 The Kanji.git project is hosted at https://github.com/jcsirot/kanji.gif/

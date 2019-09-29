@@ -1,7 +1,7 @@
 #! /bin/sh -e
 
 usage() {
-    echo "Usage: $0 <kanji>"
+    echo "Usage: $0 [-a] <kanji>"
     exit 1
 }
 
@@ -15,8 +15,13 @@ generate() {
         exit 1
     fi
     cp /kanjivg/kanji/$src_file $tmp_dir/$src_file
-    python kanimaji.py $tmp_dir/$src_file
-    cp $tmp_dir/${codepoint}_anim.gif /out/$c.gif
+    if [ $a_flag = "true" ]; then
+        python kanimaji.py $tmp_dir/$src_file
+        cp $tmp_dir/${codepoint}_anim.gif /out/$c.gif
+    else
+        python kanistatic.py $tmp_dir/$src_file
+        cp $tmp_dir/${codepoint}.png /out/$c.png
+    fi
     rm -rf $tmp_dir
 }
 
@@ -32,7 +37,22 @@ char_list() {
     done <"$file"
 }
 
-char="$1"
+print_usage() {
+  printf "Usage: ..."
+}
+
+a_flag=''
+
+while getopts 'ah' flag; do
+  case "${flag}" in
+    a) a_flag='true' ;;
+    h) usage
+       exit 1 ;;
+  esac
+done
+
+shift $((OPTIND-1))
+char=$@
 
 if [ -z $char ]; then
     usage

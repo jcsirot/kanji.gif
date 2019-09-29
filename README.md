@@ -32,4 +32,4 @@ TBD...
 ## Acknowledgments & Credits
 
 * The original kanjis and kanas source are from the [KanjiVG](https://kanjivg.tagaini.net/) project
-* The images are generated with the project [Kanimaji](https://maurimo.github.io/kanimaji/index.html)
+* The images are generated with the project [Kanimaji](https://maurimo.github.io/kanimaji/index.html) with some modifications [available here](https://github.com/jcsirot/kanimaji)
